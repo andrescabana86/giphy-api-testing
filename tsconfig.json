@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["dom", "es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./build",
+    "paths": {"@components/*": ["components/*"]},
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2019"
+  },
+  "exclude" : [
+    "node_modules", "build", "**/*.spec.tsx"
+  ],
+  "include": ["src/**/*"]
+}
