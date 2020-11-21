@@ -13,6 +13,7 @@
 * Sass ^1.28.0
 * Unit Test with React Testing Library ^11.1.1
 * Jest ^26.6.3
+* Webpack ^5.2.0
 
 ## Run the project on local
 Run npm scripts commands using `npm start` or `npm run ...`
