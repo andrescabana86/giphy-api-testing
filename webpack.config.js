@@ -1,4 +1,5 @@
 const path = require('path')
+const express = require('express')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const webpack = require('webpack')
@@ -44,5 +45,8 @@ module.exports = {
     contentBase: path.join(__dirname, 'build'),
     compress: true,
     port: 8080,
+    setup(app) {
+      app.use('/static/icons/', express.static(path.join(__dirname, 'static', 'icons')))
+    },
   },
 }
