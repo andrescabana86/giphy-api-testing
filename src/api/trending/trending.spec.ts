@@ -35,9 +35,10 @@ describe('/trending endpoint', () => {
     const result = await getTrending()
 
     // Assert
-    expect(result).toHaveLength(10)
-    expect(result[Math.floor(Math.random() * 10)]).toHaveProperty('id')
-    expect(result[Math.floor(Math.random() * 10)]).toHaveProperty('title')
-    expect(result[Math.floor(Math.random() * 10)]).toHaveProperty('url')
+    expect(result.length).toEqual(10)
+    expect(result[1]).toHaveProperty('user')
+    expect(result[4]).toHaveProperty('id')
+    expect(result[7]).toHaveProperty('title')
+    expect(result[9]).toHaveProperty('url')
   })
 })
