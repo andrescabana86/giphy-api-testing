@@ -9,13 +9,16 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./build",
-    "paths": {"@components/*": ["components/*"]},
+    "paths": {
+      "@components/*": ["components/*"],
+      "@api/*": ["api/*"]
+    },
     "sourceMap": true,
     "strict": true,
     "target": "es2019"
   },
   "exclude" : [
-    "node_modules", "build", "**/*.spec.tsx"
+    "node_modules", "build", "**/*.spec.tsx?"
   ],
   "include": ["src/**/*"]
 }

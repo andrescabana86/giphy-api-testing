@@ -1,9 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
-
+const webpack = require('webpack')
 const OUTPUT_PATH = path.resolve(__dirname, 'build')
 const OUTPUT_FILENAME = '[name].js'
+
+require('dotenv').config()
 
 module.exports = {
   mode: 'development',
@@ -18,7 +20,7 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx$/, loader: 'ts-loader', exclude: '/node_modules/' },
+      { test: /\.tsx?$/, loader: 'ts-loader', exclude: '/node_modules/' },
       {
         test: /\.sass$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
@@ -33,6 +35,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
+    }),
+    new webpack.EnvironmentPlugin({
+      GIPHY_API_KEY: process.env.GIPHY_API_KEY,
     }),
   ],
   devServer: {
