@@ -1,4 +1,4 @@
-import { TResponse, TResultTrending } from '@api/types/giphy.type'
+import { TResponse, TResultTrending } from '@api/types/giphy.types'
 
 export const trendingSerializer = (response: TResponse): TResultTrending[] => {
   return response.data.map((item) => ({

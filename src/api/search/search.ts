@@ -1,4 +1,4 @@
-import { TResponse } from '@api/types/giphy.type'
+import { TResponse } from '@api/types/giphy.types'
 import { searchSerializer } from './search.serializer'
 
 export const searchGiphy = (query: string) =>
