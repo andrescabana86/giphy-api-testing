@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LikeButton should render LikeButton component 1`] = `
+<DocumentFragment>
+  <button
+    class="like-button"
+    data-testid="like-button"
+  >
+    Like
+    <img
+      alt="Like"
+      class="like-button__icon"
+      src="static/icons/heart-empty-red.svg"
+    />
+  </button>
+</DocumentFragment>
+`;
