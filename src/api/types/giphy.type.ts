@@ -4,6 +4,14 @@ export type TResult = {
   url: string
 }
 
+export type TResultTrending = TResult & {
+  user: {
+    avatar: string
+    name: string
+    verified: boolean
+  }
+}
+
 export type TResponse = {
   data: TGif[]
   meta: {
@@ -36,7 +44,7 @@ export type TGif = {
   trending_datetime: string
   type: string
   url: string
-  user: TUser
+  user?: TUser
   username: string
 }
 
