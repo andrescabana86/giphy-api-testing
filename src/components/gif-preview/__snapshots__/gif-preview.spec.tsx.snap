@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifPreview should render GifPreview component 1`] = `
+<DocumentFragment>
+  <section
+    class="gif-preview"
+    data-testid="gif-preview"
+  >
+    <picture
+      class="gif-preview__image"
+    >
+      <img
+        alt="Like"
+        class="gif-preview__image-src"
+        data-testid="gif-preview__image-src"
+        src="/this/is/fake/url"
+      />
+    </picture>
+    <button
+      class="like-button"
+      data-testid="like-button"
+    >
+      Like
+      <img
+        alt="Like"
+        class="like-button__icon"
+        src="static/icons/heart-empty-red.svg"
+      />
+    </button>
+  </section>
+</DocumentFragment>
+`;
