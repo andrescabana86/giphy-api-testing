@@ -10,8 +10,10 @@
     "noImplicitAny": true,
     "outDir": "./build",
     "paths": {
+      "@api/*": ["api/*"],
       "@components/*": ["components/*"],
-      "@api/*": ["api/*"]
+      "@containers/*": ["containers/*"],
+      "@contexts/*": ["contexts/*"]
     },
     "sourceMap": true,
     "strict": true,
