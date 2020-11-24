@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifList should render GifList component 1`] = `
+<DocumentFragment>
+  <section
+    class="gif-list"
+    data-testid="gif-list"
+  />
+</DocumentFragment>
+`;

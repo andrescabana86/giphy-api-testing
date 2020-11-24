@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifListContainer should render GifListContainer component 1`] = `
+<DocumentFragment>
+  <span>
+    this is fake children
+  </span>
+</DocumentFragment>
+`;
