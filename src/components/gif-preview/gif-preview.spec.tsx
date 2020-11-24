@@ -7,10 +7,11 @@ describe('GifPreview', () => {
 
   it('should render GifPreview component', () => {
     // Arrange
+    const id = 'uniqueID'
     const url = '/this/is/fake/url'
 
     // Act
-    const { asFragment } = render(<GifPreview url={url} selected={false} />)
+    const { asFragment } = render(<GifPreview id={id} url={url} selected={false} />)
 
     // Assert
     expect(asFragment()).toMatchSnapshot()
@@ -18,10 +19,11 @@ describe('GifPreview', () => {
 
   it('should has "fake url" when it is rendered properly"', () => {
     // Arrange
+    const id = 'uniqueID'
     const url = '/this/is/fake/url'
 
     // Act
-    const { getByTestId } = render(<GifPreview url={url} selected={false} />)
+    const { getByTestId } = render(<GifPreview id={id} url={url} selected={false} />)
     const component = getByTestId('gif-preview')
     const image = getByTestId('gif-preview__image-src')
 
@@ -33,10 +35,11 @@ describe('GifPreview', () => {
 
   it('should has LikeButton when it is rendered properly"', () => {
     // Arrange
+    const id = 'uniqueID'
     const url = '/this/is/fake/url'
 
     // Act
-    const { getByTestId } = render(<GifPreview url={url} selected={false} />)
+    const { getByTestId } = render(<GifPreview id={id} url={url} selected={false} />)
     const button = getByTestId('like-button')
 
     // Assert
