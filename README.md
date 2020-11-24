@@ -17,14 +17,16 @@
 * Webpack ^5.2.0
 
 ## Run the project on local
-Run npm scripts commands using `npm start` or `npm run ...`
-```json5
-{
-  // ...
-  "scripts": {
-    "start": "...", // starts the project on localhost:8080
-    "test": "...", // run all tests of the project
-    "test:watch": "..." // run tests in watch mode
-  }
-}
-```
+Run npm scripts commands using `npm start`. You will access to the app using `localhost:8080`
+
+## Run test
+Run tests scripts commands using `npm test`
+
+## Coding decisions and architecture
+* Separated components in visual components and containers
+* Container only has logic, also I am using a context to share information between component preventing props drilling
+* TDD for all the components, snapshots and focused in user interaction not in component funcionality
+* Integration with ESLint and Prettier
+* Typescript for better static analysis and posibility of sharing types between components
+* Everything simple, no complex tools
+* Complete commit description with google standards for git commits
