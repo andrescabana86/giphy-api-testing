@@ -1,4 +1,5 @@
 # Giphy API Testing
+![Capture](capture.png "App")
 
 ## Goals
 
