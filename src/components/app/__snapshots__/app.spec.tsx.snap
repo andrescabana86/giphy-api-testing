@@ -2,11 +2,33 @@
 
 exports[`App should render App component 1`] = `
 <DocumentFragment>
-  <h1
-    class="title"
-    data-testid="title"
+  <main
+    class="app"
   >
-    Welcome to my boilerplate
-  </h1>
+    <h1
+      class="app__gif-list"
+    >
+      Giphy Loader
+    </h1>
+    <section
+      class="app__search"
+    >
+      <span
+        class="app__search-caption"
+      >
+        Search for a Gif:
+      </span>
+      <input
+        class="search-input"
+        data-testid="search-input"
+        type="text"
+        value=""
+      />
+    </section>
+    <section
+      class="gif-list"
+      data-testid="gif-list"
+    />
+  </main>
 </DocumentFragment>
 `;
